@@ -49,10 +49,10 @@ public class Progam {
 		double sum = 0.0;
 		System.out.println("TAXES PAID:");
 		for(TaxPayer tP : list) {
-			System.out.println(tP.getName() + ": $" + tP.tax());
+			System.out.println(tP.getName() + ": $" + String.format("%.2f", tP.tax()));
 			sum = sum + tP.tax();
 		}
-		
+		System.out.println();
 		System.out.printf("TOTAL TAXES: $%.2f", sum);
 		
 		sc.close();

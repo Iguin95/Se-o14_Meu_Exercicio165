@@ -24,12 +24,12 @@ public class Individual extends TaxPayer {
 	@Override
 	public double tax() {
 		double result = 0.0;
-		if(anuaullncome <= 200000.00) {
+		if(anuaullncome <= 20000.00) {
 			result = (this.anuaullncome * 15) / 100;
 			if(this.healthExpenditures > 0) {
 				result = result - (this.healthExpenditures * 50) / 100;
 			}
-		}else if(anuaullncome > 200000.00) {
+		}else if(anuaullncome > 20000.00) {
 			result = (this.anuaullncome * 25) / 100;
 			if(this.healthExpenditures > 0) {
 				result = result - (this.healthExpenditures * 50) / 100;
